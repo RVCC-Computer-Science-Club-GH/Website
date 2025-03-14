@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>My Webpage</title>
-    <script src="static/script.js" defer type="module"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer type="module"></script>
 </head>
 <body>
+    <nav class="nav-bar">
+        <button class="mode-toggle">Toggle Mode</button>
+        <div class="username-container">
+            <span class="username">Log In</span>
+            <input type="text" class="hidden-input" placeholder="Enter G#">
+        </div>
+    </nav>
     <iframe 
         frameBorder="0" 
         height="450px"
-        src="https://onecompiler.com/embed/python?codeChangeEvent=true&theme=dark&hideRun=true&hideStdin=true{{}}"
+        src="https://onecompiler.com/embed/python?codeChangeEvent=true&theme=light&hideRun=false&hideStdin=true&disableAutoComplete=true&"
         width="100%"
     ></iframe>
 </body>
